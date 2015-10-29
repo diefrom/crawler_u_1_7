@@ -108,7 +108,6 @@ def findChapter(url, start, end):
 inputUrl = raw_input('please input Web\'s URL: ')
 print('select 1 to download the whole directory.')
 print('select 2 to download the part of chapter.')
-print('select 3 to download the image.')
 select = raw_input('please input your selection: ')
 if select == '1':
     findChapter(inputUrl, 0, 500)
@@ -116,8 +115,6 @@ elif select == '2':
     start = raw_input('please input the start of chapter: ')
     end = raw_input('please input the end of charpter: ')
     findChapter(inputUrl, int(start), int(end))
-elif select == '3':
-    findImg(inputUrl)
 else:
     print('input error! The program exits.')
 
